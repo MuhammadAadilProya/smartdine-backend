@@ -38,7 +38,7 @@ app.use('/api/qr', qrRoutes);
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
-app.use((req, res, next) => {
-  console.log(`${req.method} request to ${req.url}`);
-  next();
-});
+app.use((req, res, next) => {                                             
+  console.log(`${req.method} request to ${req.url}`);                     
+  next();                                                                 
+});                                                                       
